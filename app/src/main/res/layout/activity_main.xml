@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <Spinner
+        android:id="@+id/select_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </Spinner>
+<com.google.android.material.tabs.TabLayout
+    android:id="@+id/category_select"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:tabMode="scrollable"
+    >
+ <com.google.android.material.tabs.TabItem
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/business"
+   />
+  <com.google.android.material.tabs.TabItem
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/entertainment"
+      />
+  <com.google.android.material.tabs.TabItem
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/general"
+      />
+  <com.google.android.material.tabs.TabItem
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/health"
+      />
+  <com.google.android.material.tabs.TabItem
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/science"
+      />
+  <com.google.android.material.tabs.TabItem
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/sports"
+      />
+  <com.google.android.material.tabs.TabItem
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/technology"
+      />
+</com.google.android.material.tabs.TabLayout>
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycler_main"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_margin="8dp"
+
+      >
+
+  </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
